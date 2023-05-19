@@ -35,13 +35,13 @@ img {
 /*----------------------------------------------------*/
 .header {
 	border-bottom: 1px solid #e7e9fc;
+	padding-top: 24px;
+	padding-bottom: 24px;
 }
 .container-header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-top: 25px;
-	padding-bottom: 25px;
 }
 .header-nav {
 	display: flex;
