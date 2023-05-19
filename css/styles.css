@@ -22,7 +22,8 @@ img {
 .container {
 	width: 1158px;
 	margin: 0 auto;
-	padding: 0 15px 0 15px;
+	padding-right: 15px;
+	padding-left: 15px;
 }
 .list {
 	list-style: none;
@@ -107,9 +108,7 @@ img {
 	display: flex;
 	flex-direction: column;
 }
-.container-footer a {
-	display: inline-block;
-}
+
 .logo-footer {
 	font-family: "Raleway", sans-serif;
 	font-weight: 800;
@@ -119,9 +118,11 @@ img {
 	text-transform: uppercase;
 	color: var(--logo-color);
 	margin-bottom: 16px;
+	display: inline-block;
 }
 .logo-footer-span {
 	color: #f4f4fd;
+	display: inline-block;
 }
 .footer-paragraph {
 	font-size: 16px;
