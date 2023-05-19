@@ -80,7 +80,8 @@ img {
 	letter-spacing: 0.02em;
 	font-weight: 500;
 	color: var(--color-grey);
-	padding: 24px 0;
+	padding-top: 24px;
+	padding-bottom: 24px;
 }
 .header-list-item-link:focus,
 .header-list-item-link:hover {
