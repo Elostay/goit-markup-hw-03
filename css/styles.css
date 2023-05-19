@@ -8,11 +8,56 @@ body {
 	color: #434455;
 	background-color: #ffffff;
 }
+* {
+	margin: 0;
+	padding: 0;
+}
+/*----------------------------------------------------*/
+.wrapper {
+}
+
+.container {
+	width: 1158px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
 .header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #e7e9fc;
+	padding: 25px 0;
+}
+.header-nav {
+	display: flex;
+	gap: 76px;
+}
+.address {
+	display: flex;
+	font-style: normal;
+}
+.footer {
+	background-color: #2e2f42;
+	padding: 100px 0;
+}
+.container-footer {
+	display: flex;
+	flex-direction: column;
+	gap: 17.5px;
+}
+.container-footer p {
+	width: 264px;
+}
+.footer-paragraph {
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: #f4f4fd;
 }
 .list {
 	list-style: none;
 }
+
 .logo-header {
 	font-family: "Raleway", sans-serif;
 	font-weight: 800;
@@ -21,6 +66,40 @@ body {
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	color: var(--logo-color);
+	align-self: center;
+}
+.header-nav-list {
+	display: flex;
+	gap: 40px;
+}
+.address-list {
+	display: flex;
+	gap: 40px;
+}
+.header-list-item {
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	font-weight: 500;
+	color: var(--color-grey);
+}
+.header-list-item:focus,
+.header-list-item:hover {
+	color: #404bbf;
+}
+.header-list-item:active {
+	color: #404bbf;
+}
+.header-list-item-address {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #434455;
+	letter-spacing: 0.02em;
+}
+.header-list-item-address:focus,
+.header-list-item-address:hover {
+	color: #404bbf;
 }
 .link {
 	text-decoration: none;
@@ -40,35 +119,14 @@ body {
 .logo-footer-span {
 	color: #f4f4fd;
 }
-.menu-list-item {
-	font-size: 16px;
-	line-height: 1.5;
-	letter-spacing: 0.02em;
-	font-weight: 500;
-	color: var(--color-grey);
+/*----------------------------------------------------*/
+.container-hero {
+	display: flex;
+	flex-direction: column;
+	padding: 188px 316px;
 }
-.menu-list-item:focus,
-.menu-list-item:hover {
-	color: #404bbf;
-}
-.menu-list-item:active {
-	color: #404bbf;
-}
-.menu-list-item-address {
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 1.5;
-	color: #434455;
-	letter-spacing: 0.02em;
-}
-.menu-list-item-address:focus,
-.menu-list-item-address:hover {
-	color: #404bbf;
-}
-.address {
-	font-style: normal;
-}
-.main-block {
+
+.section {
 	background-color: var(--color-grey);
 }
 
@@ -79,6 +137,7 @@ body {
 	color: #ffffff;
 	letter-spacing: 0.02em;
 	text-align: center;
+	padding-bottom: 48px;
 }
 .button {
 	font-size: 16px;
@@ -90,6 +149,9 @@ body {
 	font-family: "Roboto", sans-serif;
 	font-weight: 500;
 	cursor: pointer;
+	padding: 16px 32px;
+	align-self: center;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .button:focus {
 	background-color: #404bbf;
@@ -98,7 +160,18 @@ body {
 	background: #404bbf;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+
+/*----------------------------------------------------*/
 .hidden-tittle {
+	display: none;
+}
+.menu-list {
+	display: flex;
+	gap: 24px;
+	padding: 120px 0;
+}
+.menu-list-item {
+	width: 264px;
 }
 .tittle {
 	font-size: 20px;
@@ -113,6 +186,10 @@ body {
 	letter-spacing: 0.02em;
 	color: #434455;
 }
+/*----------------------------------------------------*/
+.container-app {
+	margin-bottom: 120px;
+}
 .subtitle {
 	font-weight: 700;
 	font-size: 36px;
@@ -121,20 +198,54 @@ body {
 	text-transform: capitalize;
 	letter-spacing: 0.02em;
 	color: var(--color-grey);
+	padding: 0 0 72px 0;
 }
-.footer {
-	background-color: #2e2f42;
+.app-list {
+	display: flex;
+	gap: 24px;
 }
-.footer-paragraph {
-	font-size: 16px;
-	line-height: 1.5;
+.app-list-item {
 }
-.category {
-	font-size: 16px;
-	line-height: 1.5;
-	color: #434455;
-	letter-spacing: 0.02em;
-	color: var(--paragraph-color);
+.app-list img {
+}
+/*----------------------------------------------------*/
+.section-team {
+	background-color: #f4f4fd;
+}
+.team {
+	display: flex;
+	gap: 24px;
+	margin-bottom: 120px;
+}
+
+.list-item {
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+		0px 2px 1px rgba(46, 47, 66, 0.08);
+	border-radius: 0px 0px 4px 4px;
+	background-color: #ffffff;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 32px;
+}
+.list-item img {
+	padding-bottom: 32px;
+}
+.list-item h3 {
+	padding-bottom: 8px;
+}
+.list-item p {
+}
+
+/*----------------------------------------------------*/
+.category-filter {
+	display: flex;
+	gap: 24px;
+	margin-top: 96px;
+	margin-bottom: 72px;
+	align-items: center;
+	justify-content: center;
 }
 .button-category {
 	font-size: 16px;
@@ -147,6 +258,7 @@ body {
 	font-weight: 500;
 	letter-spacing: 0.04em;
 	cursor: pointer;
+	padding: 12px 24px;
 }
 .button-category:focus {
 	color: #ffffff;
@@ -158,22 +270,51 @@ body {
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 	border-radius: 4px;
 }
-.category-item {
+/*----------------------------------------------------*/
+.category {
+	font-size: 16px;
+	line-height: 1.5;
+	color: #434455;
+	letter-spacing: 0.02em;
+	color: var(--paragraph-color);
 }
-.category-item:hover {
-	border: 1px solid #f4f4fd;
-	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
-		0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-.category-image {
-}
-.category-image:hover {
-	opacity: 0;
+.category-list {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 120px;
 }
 
-.team {
-	background-color: #f4f4fd;
+.category-item {
+	margin-right: 24px;
+	margin-bottom: 48px;
 }
-.list-item {
-	background-color: #ffffff;
+.category-item:nth-child(3) {
+	margin-right: 0;
+}
+.category-item:nth-child(6) {
+	margin-right: 0;
+}
+.category-item:nth-child(9) {
+	margin-right: 0;
+	margin-bottom: 0;
+}
+.category-item:nth-child(7) {
+	margin-bottom: 0;
+}
+.category-item:nth-child(8) {
+	margin-bottom: 0;
+}
+
+.category-item h2 {
+	padding-top: 32px;
+	padding-bottom: 8px;
+}
+.category-item p {
+	padding-bottom: 32px;
+}
+.category-item :not(:last-child) {
+}
+.category-item:hover {
+}
+.category-image {
 }
